@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="green_green_avk.anothertermshellpluginutils_side_plugin">
+
+    <queries>
+        <intent>
+            <action android:name="green_green_avk.anothertermshellpluginutils_side_application.SHOW_INFO" />
+        </intent>
+    </queries>
+
+    <application>
+
+        <activity
+            android:name=".ShowInfoStubActivity"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity-alias
+            android:name=".ShowInfoActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity=".ShowInfoStubActivity">
+            <intent-filter>
+                <action android:name="green_green_avk.anothertermshellpluginutils_side_plugin.SHOW_INFO" />
+            </intent-filter>
+        </activity-alias>
+
+    </application>
+
+</manifest>
