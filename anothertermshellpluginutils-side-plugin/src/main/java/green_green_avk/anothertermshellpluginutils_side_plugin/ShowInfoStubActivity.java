@@ -32,8 +32,8 @@ public final class ShowInfoStubActivity extends Activity {
         view.setText("...");
         setContentView(view);
         try {
-            startActivity(new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).setData(
-                    Uri.fromParts("package", getPackageName(), null)));
+            startActivity(new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                    .setData(Uri.fromParts("package", getPackageName(), null)));
             finish();
         } catch (final Exception ignored) {
         }

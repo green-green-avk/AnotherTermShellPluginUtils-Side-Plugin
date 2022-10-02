@@ -4,21 +4,23 @@ plugins {
 }
 
 group = 'com.github.green-green-avk'
-version = '1.0'
+version = '1.1'
 
 android {
-    compileSdk 30
+    namespace 'green_green_avk.anothertermshellpluginutils_side_plugin'
+
+    compileSdk 31
 
     defaultConfig {
         minSdk 14
-        targetSdk 30
-        versionCode 1
+        targetSdk 31
+        versionCode 2
         versionName version
     }
 }
 
 dependencies {
-    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.annotation:annotation:1.5.0'
 }
 
 task sourcesJar(type: Jar) {
